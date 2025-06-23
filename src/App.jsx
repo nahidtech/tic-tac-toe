@@ -77,7 +77,7 @@ export default function Game() {
       <li key={move}>
         <button
           onClick={() => jumpTo(move)}
-          className="text-blue-600 underline"
+          className="text-blue-600 font-bold leading-5"
         >
           {description}
         </button>
@@ -86,8 +86,8 @@ export default function Game() {
   });
 
   return (
-    <div className="p-4 font-sans">
-      <div className="mb-6">
+    <div className=" flex justify-center p-4 gap-x-9 mt-10">
+      <div>
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
       </div>
       <div>
